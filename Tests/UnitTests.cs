@@ -30,6 +30,6 @@ public class Addition
 	[TestMethod]
 	public void Power_Test_Wolde()
 	{
-		Assert.AreEqual(9, Program.Power("2", "3"));
+		Assert.AreEqual(8, Program.Power("2", "3"));
 	}
 }
