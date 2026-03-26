@@ -59,7 +59,6 @@ public class Program
 	private static string GetInput(string prompt)
 	{
 		Console.Write(prompt);
-
 		return Console.ReadLine()?.Trim() ?? throw new InvalidOperationException();
 	}
 
@@ -83,9 +82,11 @@ public class Program
 		return double.Parse(x) / double.Parse(y);
 	}
 
-	// Implement this method following a similar pattern as above
+	// Fixed Power method
 	public static double Power(string x, string y)
 	{
-		return 0.0;
+		double baseNum = double.Parse(x);
+		double exponent = double.Parse(y);
+		return Math.Pow(baseNum, exponent);
 	}
 }
